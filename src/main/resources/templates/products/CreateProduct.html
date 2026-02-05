@@ -18,16 +18,16 @@
                <div class="col-sm-8">
                    <input class="form-control" th:field="${productDto.name}">
                    <p th:if="${#fields.hasErrors('name')}"th:errorclass="text-danger"
-                      th:errors="${productsDto.brand}"></p>
+                      th:errors="${productDto.brand}"></p>
                </div>
            </div>
 
            <div class ="row mb-3">
                <label class="col-sm-4 col-form-lebel">Brand</label>
                <div class="col-sm-8">
-                   <input class="form-control" th:field="${productDto.name}">
+                   <input class="form-control" th:field="${productDto.brand}">
                    <p th:if="${#fields.hasErrors('brand')}"th:errorclass="text-danger"
-                      th:errors="${productsDto.name}"></p>
+                         th:errors="${productDto.brand}"></p>
                </div>
            </div>
 
@@ -43,7 +43,7 @@
                        <option value='Cameras'>Cameras</option>
                    </select>
                    <p th:if="${#fields.hasErrors('Category')}"th:errorclass="text-danger"
-                   th:errors="${productionDto.Category}"></p>
+                   th:errors="${productDto.Category}"></p>
                </div>
            </div>
 
@@ -52,7 +52,7 @@
                <div class="col-sm-8">
                    <input class="form-control"type="number"step="0.01"min="0" th:field="${productDto.price}">
                    <p th:if="${#fields.hasErrors('price')}"th:errorclass="text-danger"
-                      th:errors="${productsDto.price}"></p>
+                      th:errors="${productDto.price}"></p>
                </div>
            </div>
 
@@ -61,7 +61,7 @@
                <div class="col-sm-8">
                    <textarea class="form-control" th:field="${productDto.description}"></textarea>
                    <p th:if="${#fields.hasErrors('description')}"th:errorclass="text-danger"
-                      th:errors="${productsDto.description}"></p>
+                      th:errors="${productDto.description}"></p>
                </div>
            </div>
 
@@ -70,7 +70,7 @@
                <div class="col-sm-8">
                    <input class="form-control" type="file" th:field="${productDto.imageFile}">
                    <p th:if="${#fields.hasErrors('imageFile')}"th:errorclass="text-danger"
-                      th:errors="${productsDto.imageFile}"></p>
+                      th:errors="${productDto.imageFile}"></p>
                </div>
            </div>
 
@@ -79,7 +79,7 @@
                    <button type="submit" class="btn btn-primary">Submit</button>
                </div>
                <div class="col-sm-4 d-grid">
-                   <a class="btn btn-outline-primary" herf="/products" role="button">Cancel</a>
+                   <a class="btn btn-outline-primary"herf="/products" role="button">Cancel</a>
                </div>
            </div>
 
